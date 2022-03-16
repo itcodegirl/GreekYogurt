@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yogurt</title>
+    <style>
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 60px;
+      }
+
+      h1 {
+        text-align: center;
+        color: blueviolet;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid blueviolet;
+        line-height: 1.5;
+        padding: 20px;
+        font-family: 18px;
+        border-radius: 4px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 50%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: blueviolet;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .learn-more {
+        padding-top: 10px;
+        color: blueviolet;
+        text-decoration: none;
+        font-size: 13px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love yogurt</h1>
+
+      <h2>Especially Greek Yogurt</h2>
+      <img
+      src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/323/323169/greek-yoghurt-in-bowl.jpg?w=1575
+      alt="Picture of Greek Yogurt">
+
+      <p>
+        Greek yogurt is a protein-rich dairy product with a variety of culinary
+        uses. It’s an excellent source of a number of nutrients and may even
+        offer a few health benefits. However, it’s important to choose the right
+        type of Greek yogurt, as many can be packed with additives like added
+        sugar.
+        <br />
+      </p>
+      <a
+        href="https://www.healthline.com/health/food-nutrition/greek-yogurt-benefits"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on healthline
+      </a>
+      <button class="buy-button">Buy Greek Yogurt</button>
+      <p class="footer">This page was built by Jenna Zawaski</p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        alert(
+          "Thank you " +
+            name +
+            "! We will be in touch by email, meanwhile have a lot of Yogurt!"
+        );
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
